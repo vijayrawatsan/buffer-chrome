@@ -27,6 +27,7 @@
     "data/shared/img/buffer-hover-icon@1x.png",
     "data/shared/img/buffer-hover-icon@2x.png",
     "data/shared/img/white-loading-gif-small.gif",
+    "data/shared/img/buffer-icon-small.png",
     "data/shared/tpc-check.html"
   ],
   "content_scripts": [
@@ -137,6 +138,17 @@
       ],
       "js": [
         "data/shared/embeds/buffer-quora.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://github.com/**"
+      ],
+      "js": [
+        "data/shared/embeds/buffer-github.js"
+      ],
+      "css": [
+        "data/shared/embeds/buffer-github.css"
       ]
     }
   ],
